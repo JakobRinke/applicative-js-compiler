@@ -10,7 +10,7 @@ function compile_to_js(code) {
     // if then else fi
     c = c.replace(/ if /g, " eval(` if (");
     c = c.replace(/ else /g, " } else { ");
-    c = c.replace(/ fi fi /g, " fi  fi ");
+    c = c.replace(/ fi /g, "  fi  ");
     c = c.replace(/ fi /g, "  }`)  ");
     c = c.replace(/ fi;/g, " }`)  ");
     c = c.replace(/ then /g, " ){ ");
