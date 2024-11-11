@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakobs Nachrichten</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+                
+
+    </header>
+
+    <main class="container-fluid" style="min-height: 90vh">
+        <div class="container">
+            <hgroup>
+                <h2> Applikativ zu Javascript Compiler </h2>
+                <p> Erstellt von Jakob Rinke </p>
+            </hgroup>
+        </div>
+        <br>
+
+        <div class="container" id="Nachrichten">
+            <div class="grid">
+                <div>
+                    <label for="applicative"> Applikativer Algorithmus </label>
+                    <textarea id="applicative" style="height: 40vh;"> </textarea>
+                </div>
+
+                <div>
+                    <label for="applicative"> Javascript </label>
+                    <textarea id="js" style="height: 40vh; background-color: white; color: black;" readonly> </textarea>
+                </div>
+               
+               
+
+            </div>
+
+            <div> 
+                <label for="test_in"> Testeingabe</label>
+                <textarea id="test_in" style="height: 20vh;"> </textarea>
+            </div>
+
+            <div class="grid">
+                <button onclick="start_compilation()"> Kompilieren und Ausführen </button>
+            </div>
+
+            <br>
+            <div> 
+                <label for="test_out"> Testausgabe</label>
+                <textarea id="test_out" style="height: 20vh; background-color: white; color: black;" readonly> </textarea>
+            </div>
+        
+        </div>
+
+        <br> <br>
+
+        <div class="container"> 
+
+            <h4> Disclaimer </h4>
+
+            <ul>
+                <li> Funktionen werden definiert mit:  <b> f(parameter) := code </b> </li>
+                <li> Es können nicht 2 Funktionen in einer Zeile definiert werden, eine Funktion kann aber über mehrere Zeilen gehen </li>
+                <li> ∧, ∨ und ¬ können auch mit and, or ausgedrückt werden </li>
+
+                <li> Ich gebe keine Garantie auf Korrektheit </li>
+            </ul>
+
+        </div>
+
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="grid">
+            <div class="container-fluid">
+                &copy; 2024 Jakob Rinke
+            </div>
+
+            <div class="grid">
+                <div class="container">
+                    <a href="https://rinke-online.de/impressum.html"> Impressum </a>
+                </div>
+                <div class="container">
+                    <a href="https://rinke-online.de/datenschutz.html"> Datenschutz </a>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </footer>
+
+
+    <script src="compiler.js"> </script>
+
+    
+</body>
+</html>
+
+
